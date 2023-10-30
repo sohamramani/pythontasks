@@ -1,0 +1,25 @@
+filemanager commands
+
+list
+--run --file_manager --list => list of all files and folders of current directory
+--run --file_manager --list --file => list of all files of current directory
+--run --file_manager --list --folder => list of all folders of current directory
+
+move
+--run --file_manager --file --move src --destination destination => move file 
+--run --file_manager --folder --move src --destination destination => move folder 
+
+copy
+--run --file_manager --file --copy src-file --destination destination => copy file
+--run --file_manager --folder --copy src-folder --destination destination => copy folder
+
+delete
+--run --file_manager --delete => delete file
+
+sort commands
+--run --sort --files --input_folder input-src => sort files into folder
+--run --sort --folders --input_folder input-src => sort folders into folder
+
+zip/unzip commands
+--run compress src file.zip => zip src file
+python3 main.py --run decompress zip-file-src output-folder-src => unzip file
